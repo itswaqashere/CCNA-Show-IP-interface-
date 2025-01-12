@@ -1,0 +1,13 @@
+In this i will show you that how you can see how many interfaces(ports) are connected or not connected to the Router in Command line interface on packet traser.
+first you need to enter in the privileged  Exact mode
+Router>enable
+Router#                                                 : This show that we are in priveleged exact mode
+Router#conf t                                           : This command is used for global configuration in this we do operation on Router
+Router(config)#do show ip interface brief               : This command is used for show ip interfaces or port that are connected on the router
+Interface              IP-Address      OK?   Method  Status                Protocol 
+GigabitEthernet0/0/0   unassigned      YES   unset   administratively     down down 
+GigabitEthernet0/0/1   unassigned      YES   unset   administratively     down down 
+GigabitEthernet0/0/2   unassigned      YES   unset   administratively     down down 
+Vlan1                  unassigned      YES   unset   administratively     down down
+
+They all are unassigned and unset and down because i didnt enter any single port or interface in it
